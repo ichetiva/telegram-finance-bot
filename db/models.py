@@ -18,4 +18,4 @@ class Expense(Base):
     id = db.Column(db.Integer, primary_key=True)
     amount = db.Column(db.Integer, nullable=False)
     category = db.Column(db.Integer, db.ForeignKey("categories.id"))
-    created_at = db.Column(db.DateTime, default=db.func.now())
+    created_at = db.Column(db.Date, default=db.func.now())

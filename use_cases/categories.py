@@ -37,3 +37,9 @@ class Categories:
         else:
             category = await self.get_by_name("other")
             return category.code, category.name
+    
+    async def get_by_code(self, code: int) -> str:
+        categories = await self.get_categories()
+        for category in categories:
+            if category.code == code:
+                return category.name
