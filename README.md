@@ -5,4 +5,4 @@ Functionally:
 2. Check today statistics by command: /today
 3. Check sum of month expenses by command: /month
 4. Check last 10 expenses: /expenses
-5. Delete expense by command: /delete_<expense code>  
+5. Delete expense by command: /delete_(expense code)
